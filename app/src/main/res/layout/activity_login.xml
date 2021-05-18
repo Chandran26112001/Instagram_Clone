@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_action_name"
+        android:layout_marginTop="50dp"
+        android:id="@+id/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/instagram"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instagram"
+        android:text="----A Clone Project By Chan----"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:textColor="#5C00FF"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/til1"
+        android:layout_below="@+id/logo">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_email"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/til2"
+        android:layout_below="@+id/til1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_password"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/til2"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/white_rounded_button"
+        android:text="Login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:text="No Account Yet ? Create One"
+        android:textColor="#4FB4E1"
+        android:id="@+id/link_signup"
+        android:layout_marginTop="25dp"/>
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/loginRequestLoadingProgressbar"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

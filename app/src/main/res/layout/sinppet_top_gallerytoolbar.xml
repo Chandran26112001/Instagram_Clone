@@ -1,0 +1,53 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ivCloseShare"
+                    android:src="@drawable/ic_black_x"
+                    android:layout_marginRight="16dp"/>
+                
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivCloseShare"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/spinnerDirectory"
+                    android:gravity="center_vertical"
+                    android:text="Gallery"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="16dp"
+                    android:id="@+id/tvNext"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#2AA0FD"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>
